@@ -50,15 +50,17 @@
     .content_box{
       width: 100%;
       height: 100%;
-    }
-    .content_clients_box{
-      background: red;
-    }
-    .content_about_box{
-      background: green;
-    }
-    .content_registration_box{
-      background: yellow;
+
+      .content_box_clients_box, .content_box_btn_registration{
+        width: 50%;
+        height: 100%;
+        float: left;
+        display: flex;
+        flex-direction: column;
+      }
+      .content_box_btn_registration{
+        float: right;
+      }
     }
   }
 

@@ -1,2 +1,2 @@
-export const LOGIN = "LOGIN"
-export const LOGOUT = "LOGOUT"
+
+export const ADD_CLIENT = "ADD_CLIENT"
