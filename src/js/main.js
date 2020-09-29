@@ -6,11 +6,15 @@ import thunk from "redux-thunk";
 
 //------------------------------
 import App from "./App";
+import {rootReducer} from "./redux/reducers/rootReducer";
 
+const store = createStore(rootReducer)
 
 
 ReactDOM.render(
-        <App/>,
+    <Provider store={store}>
+        <App/>
+    </Provider>,
     document.getElementById('root')
 );
 

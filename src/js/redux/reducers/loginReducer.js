@@ -1,5 +1,4 @@
-import {LOGIN, LOGOUT} from "../../types";
-
+import {LOGIN, LOGOUT} from "../types"
 
 const initiallyState = {
     login: false

@@ -1,6 +1,9 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route, Link, NavLink, HashRouter} from "react-router-dom";
-import {useDispatch, useSelector} from "react-redux"; // хуки позволяющий дипатчить акшины и получать state
+import {useDispatch, useSelector} from "react-redux";
+import Header from "./components/header/Header";
+import Content from "./components/content/Content";
+import Footer from "./components/footer/Footer"; // хуки позволяющий дипатчить акшины и получать state
 
 //----------------------------
 
@@ -13,7 +16,14 @@ class App extends React.Component {
 
     render() {
         return (
-            <div></div>
+            <HashRouter>
+                <div className="main_container">
+                    <Header/>
+                    <Content/>
+                    <Footer/>
+                </div>
+            </HashRouter>
+
         );
     }
 }
